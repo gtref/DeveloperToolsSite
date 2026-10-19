@@ -4,11 +4,13 @@ import Footer from './components/footer'
 import Home from './pages/home'
 import About from './pages/about'
 import Learn from './pages/learn'
+import Tools from './pages/tools'
 import C from './pages/languages/c'
 import Cpp from './pages/languages/cpp'
 import Html from './pages/languages/html'
 import JavaScript from './pages/languages/javascript'
 import Python from './pages/languages/python'
+import SatisCode from './pages/tools/Stside'
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
             <NavLink to="/learn" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
               Learn
             </NavLink>
+            <NavLink to="/tools" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+              Tools
+            </NavLink>
           </nav>
         </header>
 
@@ -33,11 +38,13 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/learn" element={<Learn />} />
+            <Route path="/tools" element={<Tools />} />
             <Route path="/pages/languages/javascript" element={<JavaScript />} />
             <Route path="/pages/languages/python" element={<Python />} />
             <Route path="/pages/languages/html" element={<Html />} />
             <Route path="/pages/languages/c" element={<C />} />
             <Route path="/pages/languages/cpp" element={<Cpp />} />
+            <Route path="/pages/tools/Stside" element={<SatisCode />} />
           </Routes>
         </main>
         <Footer />

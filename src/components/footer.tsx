@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { FaGithub } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -16,9 +17,7 @@ function Footer() {
           rel="noreferrer"
           aria-label="Developer Tools on GitHub"
         >
-          <svg className="footer-github-icon" aria-hidden="true">
-            <use href="/icons.svg#github-icon" />
-          </svg>
+          <FaGithub />
         </a>
       </nav>
       <p className="footer-copyright">
