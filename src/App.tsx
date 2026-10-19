@@ -1,5 +1,6 @@
 import './App.css'
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
+import Footer from './components/footer'
 import Home from './pages/home'
 import About from './pages/about'
 import Learn from './pages/learn'
@@ -39,6 +40,7 @@ function App() {
             <Route path="/pages/languages/cpp" element={<Cpp />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </BrowserRouter>
   )
