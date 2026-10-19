@@ -14,7 +14,7 @@ import SatisCode from './pages/tools/Stside'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="app-shell">
         <header className="site-header">
           <nav className="site-nav" aria-label="Main navigation">

@@ -19,13 +19,13 @@ export default function SatisCode() {
             <p>SatisCode Features</p>
             <hr />
             <table>
-                <thread>
+                <thead>
                     <tr>
                         <th>Features</th>
                         <th>Satiscode</th>
                         <th>vscode</th>
                     </tr>
-                </thread>
+                </thead>
                 <tbody>
                     {features.map((feature) => (
                         <tr key={feature.name}>
@@ -43,6 +43,8 @@ export default function SatisCode() {
                 </tbody>
             </table>
         </Modal>
+        <br />
+        <p>Satiscode is a simple extention free, fully offline IDE.</p>
         </>
     )
 }
