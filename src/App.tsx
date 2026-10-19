@@ -11,6 +11,7 @@ import Html from './pages/languages/html'
 import JavaScript from './pages/languages/javascript'
 import Python from './pages/languages/python'
 import SatisCode from './pages/tools/Stside'
+import NotFound from './pages/not-found'
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             <Route path="/pages/languages/c" element={<C />} />
             <Route path="/pages/languages/cpp" element={<Cpp />} />
             <Route path="/pages/tools/Stside" element={<SatisCode />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

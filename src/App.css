@@ -59,6 +59,30 @@
   flex: 1;
 }
 
+.not-found {
+  display: grid;
+  justify-items: center;
+  padding: clamp(1rem, 6vw, 3rem) 0;
+  text-align: center;
+}
+
+.not-found-code {
+  margin-bottom: 0.5rem;
+  color: #6366f1;
+  font-size: clamp(4rem, 18vw, 8rem);
+  font-weight: 800;
+  letter-spacing: -0.08em;
+  line-height: 1;
+}
+
+.not-found h1 {
+  margin-bottom: 0.75rem;
+}
+
+.not-found > p:not(.not-found-code) {
+  margin-bottom: 1.5rem;
+}
+
 .page-content h1 {
   margin: 0 0 1rem;
   font-size: clamp(2.25rem, 5vw, 3.5rem);
